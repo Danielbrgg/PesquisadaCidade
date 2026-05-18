@@ -12,10 +12,7 @@ IdadeMaximaFeminino = 0
 IdadeMinimaFeminino = 999
 
 while True:
-    idade = int(input("Qual a sua idade? (0 para parar): "))
-
-    if idade == 0:
-        break
+    idade = int(input("Qual a sua idade?: "))
 
     sexo = input("Qual o seu sexo? (m/f): ").lower()
     renda = float(input("Qual a sua renda? R$ "))
@@ -45,7 +42,12 @@ while True:
 
         if renda >= 1000 and renda <= 3000:
             rendafem += 1
-            
+
+    continuar = input("\nDeseja cadastrar outra pessoa? (s/n): ").lower()
+
+    if continuar == "n":
+        break
+
 if contadorM > 0:
     MediaSalarioMasc = salarioMasc / contadorM
 else:
