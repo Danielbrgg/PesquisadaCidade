@@ -1,5 +1,5 @@
 contador = 0
-contadorM = 0
+contadorMasculino = 0
 
 salarioMasc = 0
 rendafem = 0
@@ -24,7 +24,7 @@ while True:
 
     if sexo == "m":
         salarioMasc += renda
-        contadorM += 1
+        contadorMasculino += 1
 
         if idade > IdadeMaximaMasculina:
             IdadeMaximaMasculina = idade
@@ -48,8 +48,8 @@ while True:
     if continuar == "n":
         break
 
-if contadorM > 0:
-    MediaSalarioMasc = salarioMasc / contadorM
+if contadorMasculino > 0:
+    MediaSalarioMasc = salarioMasc / contadorMasculino
 else:
     MediaSalarioMasc = 0
 
